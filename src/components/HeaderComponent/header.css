@@ -1,0 +1,52 @@
+header {
+  padding: 2rem;
+  background: #c3f7eb;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.menuBar {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #c3f7eb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  header ul li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  header ul li {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menuBar {
+    display: none;
+  }
+}
